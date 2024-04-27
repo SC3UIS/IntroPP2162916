@@ -1,0 +1,28 @@
+[ddparrap@guane ~]$ mkdir ParcialII
+[ddparrap@guane ~]$ cd ParcialII/
+[ddparrap@guane ParcialII]$ nano binarySearch_MPI.c
+[ddparrap@guane10 ~]$  exit
+exit
+[ddparrap@guane ParcialII]$ srun -n 4 --pty /bin/bash
+
+[ddparrap@guane11 ParcialII]$ module load  devtools/mpi/openmpi/4.1.2
+Loading compiler version 2021.4.0
+Loading tbb version 2021.4.0
+Loading compiler-rt version 2021.4.0
+Loading debugger version 10.2.4
+Loading dpl version 2021.5.0
+Loading oclfpga version 2021.4.0
+Loading init_opencl version 2021.4.0
+Loading icc version 2021.4.0
+Loading mkl version 2021.4.0
+Warning: Intel PAC device is not found.
+Please install the Intel PAC card to execute your program on an FPGA device.
+Warning: Intel PAC device is not found.
+Please install the Intel PAC card to execute your program on an FPGA device.
+[ddparrap@guane11 ParcialII]$ mpicc -fopenmp postmansort_mpi.c -o postmansort_mpi
+[ddparrap@guane11 ParcialII]$ mpirun -np 4 ./postmansort_mpi
+Work took 40.957892 seconds
+[ddparrap@guane11 ParcialII]mpirun --mca btl_openib_allow_ib true -np 2 postmansort_mpi0
+Work took 35.150583 seconds
+[ddparrap@guane11 ParcialII]mpirun --mca btl_openib_allow_ib true -np 2 postmansort_mpi01
+Work took 28.917649 seconds
