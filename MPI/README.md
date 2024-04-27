@@ -3,7 +3,6 @@
 * *Juan Diego Atehortua Duque - 2182064*
 
 ## Busqueda Binaria
-Por supuesto, aquí tienes una versión mejorada:
 
 Este código implementa dos funciones clave: `bubble_sort` y `binary_search`. La función `bubble_sort` se encarga de ordenar una lista de números utilizando el algoritmo de burbuja. En este proceso, los elementos adyacentes se comparan y se intercambian si están en el orden incorrecto. Este ciclo de comparación y intercambio continúa hasta que la lista esté completamente ordenada de manera ascendente.
 
