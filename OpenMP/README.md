@@ -1,3 +1,6 @@
+***Link al Github original en el cual se puede ver la fecha de entrega cumpliendo los tiempos dados.***
+*https://github.com/0MonsieurChat0/Paralela.git*
+
 El método de ordenamiento "Radix Sort", también conocido como algoritmo Postman, organiza los elementos de una lista según sus dígitos individuales. Es especialmente útil para ordenar números con una cantidad constante de dígitos.
 
 Utilizaremos las herramientas proporcionadas en clase, como guane o guaneExa, para analizar los tiempos de ejecución de los procesos.
