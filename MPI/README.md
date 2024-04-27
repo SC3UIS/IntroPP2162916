@@ -74,7 +74,9 @@ mpicc -fopenmp postmansort_mpi.c -o postmansort_mpi
 
 [ddparrap@guane11 ParcialII]$ mpirun -np 4 ./postmansort_mpi
 Work took 40.957892 seconds
+
 [ddparrap@guane11 ParcialII]mpirun --mca btl_openib_allow_ib true -np 2 postmansort_mpi0
 Work took 35.150583 seconds
+
 [ddparrap@guane11 ParcialII]mpirun --mca btl_openib_allow_ib true -np 2 postmansort_mpi01
 Work took 28.917649 seconds
